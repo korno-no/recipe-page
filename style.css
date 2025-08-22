@@ -63,7 +63,6 @@
 
 }
 
-
 .summary_title{
     color: var(--rose800);
     font-family: "outfit";
@@ -136,4 +135,21 @@ td{
 .amount{
     font-weight: bold;
     color: var(--brown800);
+}
+
+
+@media (max-width: 400px) {
+    .recipe{
+        margin: 0;
+        padding: 0;
+    }
+    .banner{
+        border-radius: 0;
+    }
+    section{
+        padding: 1rem;
+    }
+    .summary{
+        margin: 1rem;
+    }
 }
