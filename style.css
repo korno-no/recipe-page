@@ -1,0 +1,139 @@
+:root{
+    --stone100: hsl(30, 54%, 90%);
+    --stone900: hsl(24, 5%, 18%);
+    --stone600: hsl(30, 10%, 34%);
+    --brown800: hsl(14, 45%, 36%);
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: "outfit";
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "young-serif";
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "outfit";
+    color: var( --stone600);
+    line-height: 1.5em;
+    
+}
+
+.background{
+    background-color:var(--stone100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe{
+    margin-top: 10rem;
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.banner{
+    border-radius: 1rem;
+    width:100%
+}
+
+.title{
+    font-family: "young-serif";
+    color: var(--brown800)
+}
+
+.general-information__title{
+    color: var( --stone900);
+    font-size: 38px;
+    font-weight: 600;
+
+}
+
+
+.summary_title{
+    color: var(--rose800);
+    font-family: "outfit";
+    font-weight: 500;
+}
+
+.summary{
+    background-color: var(--rose50);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+  
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul, ol{
+    margin-left: 1rem; ;
+}
+
+.summary__ul li::marker {
+    padding: 10rem;
+    color: var(--rose800);
+    font-size: 0.8rem
+}
+
+.ingredients__ul{
+    list-style-type: square;
+}
+
+.ingredients__ul li::marker{
+    font-size: 0.7rem;
+    color: var(--brown800)
+}
+
+ol > li::marker {
+    font-weight: bold;
+    color: var(--brown800);
+}
+
+
+li{
+    padding-left: 1rem;
+    line-height: 2em;
+}
+
+hr{
+    border-top: 0.5px solid var(--stone100);
+}
+
+table{
+     border-collapse:collapse;
+}
+
+tr{
+    border-bottom:  0.5px solid var(--stone100);
+}
+
+tr:last-child{
+    border-bottom: none;
+}
+
+td{
+    padding: 1rem;
+}
+
+.amount{
+    font-weight: bold;
+    color: var(--brown800);
+}
